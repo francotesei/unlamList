@@ -7,12 +7,12 @@ angular.module('grid')
 
       enableGridMenu: true, // mueestra menu
       enableColumnResizing: true, // deja editar en largo de la row
-      showGridFooter: true, //
-    showColumnFooter: true,
+      enableCellEditOnFocus : true,//deja editar las rows
       data: 'data',
       importerDataAddCallback: function ( grid, newObjects ) {
         $scope.data = $scope.data.concat( newObjects );
       }
+
    };
 
 

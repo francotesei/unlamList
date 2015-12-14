@@ -1,6 +1,6 @@
 angular.module('grid', [
   'ui.grid', 'ui.grid.importer','ui.grid.exporter','ui.grid.resizeColumns',
-  'ui.grid.edit', 'ui.grid.rowEdit', 'ui.grid.cellNav'])
+  'ui.grid.edit', 'ui.grid.cellNav'])
 
 .config(function($stateProvider,$urlRouterProvider){
   $stateProvider // define los estados de mi aplicacion
@@ -10,7 +10,7 @@ angular.module('grid', [
           controller: "gridCtrl", // controller a usar
       //  controllerAs : "grid"// alias para el controller, para utilizar el this
       })
-    
+
     });
 
 
