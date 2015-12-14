@@ -1,12 +1,9 @@
 
 angular.module('app',[
   'ui.router',
-  'ngResource'
+  'ngResource',
+  'grid'
 ])
-
-.controller('mainCtrl',function($state){
-
-})
 
 .config(function($stateProvider,$urlRouterProvider){
   $stateProvider // define los estados de mi aplicacion
@@ -15,6 +12,6 @@ angular.module('app',[
           templateUrl: "views/homeTemp.html", // template a usar
           controller: "homeCtrl", // controller a usar
           controllerAs : "home"// alias para el controller, para utilizar el this
-      });
-      $urlRouterProvider.otherwise("/home");
+      })
+      $urlRouterProvider.otherwise("/home/grid");
     });

@@ -1,0 +1,16 @@
+{
+  "name": "unlamList",
+  "description": "Plataforma de listado",
+  "main": "index.html",
+  "authors": [
+    "Tesei Franco"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/francotesei/unlamList",
+  "moduleType": [
+    "node"
+  ],
+  "dependencies": {
+    "CSV-JS": "csv-js#~1.1.1"
+  }
+}

@@ -2,11 +2,16 @@
   <head>
     <meta charset="utf-8">
     <title>UnlamList</title>
+    <!-- main css -->
+    <link rel="stylesheet" href="assets/css/main.css">
 
     <!-- bootstrap css -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <!-- ui-grid css -->
+    <link rel="stylesheet" href="https://cdn.rawgit.com/angular-ui/bower-ui-grid/master/ui-grid.min.css">
+
   </head>
-  <body ng-controller="mainCtrl as main">
+  <body>
 
 
 
@@ -22,12 +27,21 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 <!-- Angular -->
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0-rc.0/angular.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0-rc.0/angular-resource.min.js"></script>
+<!-- ui-router -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
+<!-- ngResource -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0-rc.0/angular-resource.min.js"></script>
+<!--ui-grid -->
+<script src="https://cdn.rawgit.com/angular-ui/bower-ui-grid/master/ui-grid.min.js"></script>
+<script src="assets/lib/CSV-JS/csv.js"></script>
+<script src="assets/lib/pdfmake/build/pdfmake.min.js"></script>
+<script src="assets/lib/pdfmake/build/vfs_fonts.js"></script>
 
   <!-- local Angular depen -->
   <script src="modules/app.js"></script>
-    <script src="controllers/homeCtrl.js"></script>
+  <script src="modules/grid.js"></script>
+  <script src="controllers/homeCtrl.js"></script>
+  <script src="controllers/gridCtrl.js"></script>
 
   </body>
 </html>
